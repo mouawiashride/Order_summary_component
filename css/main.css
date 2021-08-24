@@ -1,35 +1,46 @@
-root {
-    --Paleblue: #c6538c;
-    --Brightblue : hsl(245, 75%, 52%);
-    --Verypaleblue: hsl(225, 100%, 98%);
-    --Desaturatedblue: hsl(224, 23%, 55%);
-    --Darkblue: hsl(223, 47%, 23%);
-   
-  }
 
   *
   {
     transition: all .5s ease-in-out;
   }
-  body 
+
+
+/* start style background */
+body 
 {
     background-color: hsl(225, 100%, 94%);
-    background-size: cover;
+    background-size: contain;
       background-repeat: no-repeat;
       font-family: 'Red Hat Display', sans-serif;
+      
       font-size: 16px;
       
 }
+/* mobile screen */
+@media (min-width:375px )
+{    
+  body {
+  background-image:  url('../images/pattern-background-mobile.svg');
+  }
+}
+/* desktop screen */
+@media (min-width:1440px )
+{
+  body 
+  {
+    background-image:  url('../images/pattern-background-desktop.svg');
+  }
+}
+/* end style background */
 
-
-  
   .container 
   {
-      margin-top: 4%;
+      margin-top: 2%;
   }
+
   .row > div 
   {
-      padding: 0 0 50px 0;
+      padding: 0 0 30px 0;
       border-bottom-left-radius: 20px;
       border-bottom-right-radius: 20px;
   }
@@ -44,7 +55,7 @@ root {
   }
   .row  div p 
   {
-      /* padding: 0px 201px; */
+    
     color: hsl(224, 23%, 55%);
     font-weight: 500;
     word-spacing: 4px;
@@ -52,7 +63,6 @@ root {
     width: 50%;
     margin: 0 auto;
     
-
 }
   .row > div  img , .row > div 
 {
@@ -64,11 +74,12 @@ root {
 {
     background-color:#f8f9fe; 
       margin:20px auto;
-      width: 60%;
+      width: 90%;
       padding: 25px;
       border-radius: 20px;
-      
-     
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .secpart img 
 {
@@ -80,7 +91,7 @@ root {
 .secpart h2 
 {
 text-align: left;
-line-height: .5;
+
 font-weight: 700;
 font-size: 25px;
 letter-spacing: -1px;
@@ -106,7 +117,7 @@ float: left;
     display: block;
     color: hsl(225, 100%, 98%);
     background-color: hsl(245, 75%, 52%);
-    width: 60%;
+    width: 90%;
     margin:25px auto ;
     font-weight: 500;
     border-radius: 10px;
@@ -120,53 +131,39 @@ float: left;
     font-weight: 900;
 }
 
-/* mobile screen */
+/* start xs mobile screen */
 @media (min-width:375px )
 {    
-  body {
-  background-image:  url('../images/pattern-background-mobile.svg');
-  }
 
-  .row  div p 
-  {
-    width:90%;
- 
-  }
-  .secpart
-  {
-    width: 90%;
-  }
-  .secpart + button 
-  {
-    width:90% ;
-  }
   .container 
   {
     width: 90%;
   }
-  .secpart  a
-  {
-    margin: -4% 0;
-  }
+
 }
-/* desktop screen */
-@media (min-width:1440px )
+
+@media (max-width:384px)
 {
-  body 
+  .secpart 
   {
-    background-image:  url('../images/pattern-background-desktop.svg');
+    padding: 0px;
   }
 }
-
+@media  (max-width:290px)
+{
+  .secpart img 
+  {
+    margin: 0px;
+  }
+}
+/* end xs mobile screen */
 /* active style */
-
 
 .secpart  a:hover
 {
     color:      #7469c5;
 text-decoration: none;
 }
-
 
 .row button + a:hover
 {
