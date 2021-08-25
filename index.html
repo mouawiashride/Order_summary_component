@@ -8,43 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/all.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- 
 
-<div class="container">
-    <div class="row">
-        <div  class='text-center ml-auto mr-auto col-md-8  col-sm-12 bg-white '>
-                <img src="images/illustration-hero.svg" width="100%" >
-                <h1>Order Summary</h1>
-                <p>
-                    You can now listen to millions of songs,<br>
-                    audibooks, and podcasts on<br> 
-                    any device anywhere you like!
-                </p>
-                <div class="secpart ">
-                   <div class="leftpart">
-                    <img src="images/icon-music.svg">
-                    <h2>Annual Plan</h2>
-                    <br>
-                    <span>$59.99/year</span>
-                </div>
-                    <a href="#">Change</a>
-                </div>
-                <button type="button" class="btn">Proceed to Payment</button>
-                <a href="#">Cancel Order</a>
+        <div class="parent" role="main">
+            <img class="imghero" role="imaghero" src="images/illustration-hero.svg" alt="hero svg" title="hero svg">
+            <h1 role="maintitle">Order Summary</h1>
+                     <p role="mainparagraph">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+             <div>
+                  <img role="iconmusic" src="images/icon-music.svg" alt="icon music" title="icon music">
+                   <h2 role="secondtitle">Annual Plan<br>
+                    <span role="price">$59.99/year</span>
+                   </h2>
+                    <a role="changeanchor">Change</a>
+             </div>
+                    <button role="buttonproceed">
+                        Proceed to Payment
+                    </button>
+                    <a href="#" role="cancelanchor">Cancel Order</a>
         </div>
-    </div>
-</div>
-
-<!-- javascript -->
-<script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js" ></script>
-
-  
+        
 </body>
 </html>

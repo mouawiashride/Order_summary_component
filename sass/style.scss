@@ -1,0 +1,231 @@
+$Paleblue: hsl(225, 100%, 94%);
+$Brightblue:  hsl(245, 75%, 52%);
+$Verypaleblue: hsl(225, 100%, 98%);
+$Desaturatedblue: hsl(224, 23%, 55%);
+$Darkblue: hsl(223, 47%, 23%);
+$shadowcolor:hsl(253, 50%, 89%);
+$activeanchor:#796ee8;
+$borderradius:20px;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+// style body
+body 
+{
+    font-family: Red Hat Display;
+    background-repeat: no-repeat;
+    background-color: $Paleblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+
+
+.parent
+{
+  background-color: white;
+  border-radius: $borderradius;
+  .imghero
+  {
+      height: 160.2;
+      width: 100%;
+      border-radius:$borderradius $borderradius 0 0 ;
+  }
+   &>h1 
+  {
+      text-align: center;
+      margin: 0 auto;
+      font-weight: 900;
+  }
+  &>p
+  {
+   color:$Desaturatedblue ;
+   text-align: center;
+   margin-bottom: 26px;
+  }
+  &>div
+  {
+     border-radius: $borderradius;
+      background-color: $Verypaleblue;
+      margin: auto;
+     
+      display: flex;
+      justify-content:  flex-start;
+      align-items: flex-start;
+      
+      img 
+      {
+          display: block;
+          width: 48px;
+          height: 100%;
+      }
+      h2
+        {
+            font-size: 16px;
+            font-weight: 900;
+            span
+            {
+                font-size: 14px;
+                font-weight: 500;
+                color: $Desaturatedblue;
+            }
+        }
+          a
+        {
+            margin-left:auto;
+            align-self: center;
+            color: hsl(245, 75%, 52%);
+            font-weight: 700;
+            text-decoration: underline;
+
+            &:hover
+            {
+                text-decoration: none;
+                color: $activeanchor;
+            }
+            
+        }
+  }
+
+}
+@media (min-width:375px)
+{
+    body {
+                background-image: url('../images/pattern-background-mobile.svg');
+                background-size: cover;
+        
+            .parent 
+            {
+                width: 327px;
+                height:568px ;
+                .imghero
+                {
+                    height: 160.2;
+                    width: 100%;
+                }
+                &>h1 
+                {
+                    height: 82.1px;
+                    padding: 21.5px 0;
+                    font-size: 25px;
+                }
+                &>p
+                {
+                padding:0px 25px;
+              
+                }
+                &>div
+                {
+                    width: 287.7px;
+                    height: 82.6px;
+                    padding: 16px;
+                    h2
+                    {
+                        margin-left: 19px;
+                    }
+                }
+                
+                &>button
+                {
+                    margin: 23.5px auto 27.3px;
+                    width: 278.5px;
+                    display: block;
+                    height: 50.5px;
+                    text-align: center;
+                    background-color: $Brightblue;
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $Verypaleblue;
+                    border-radius: $borderradius - 5;
+                    border: none;
+                    box-shadow: 1px 10px 20px $shadowcolor,1px 15px 20px $shadowcolor;
+                }
+                &>a 
+                {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 700;
+                color: $Desaturatedblue;
+                }
+            }
+        }
+}
+@media (min-width:1440px)
+{
+    body {
+        background-image: url('../images/pattern-background-desktop.svg');
+        background-size: contain;
+                .parent 
+                {
+                    width: 451px;
+                    height:699px;
+                    .imghero
+                    {
+                        height: 199.5px;
+                        width: 100%;
+                    }
+                    &>h1 
+                    {
+                        height: 82.1px;
+                        padding: 53px 0;
+                        font-size: 25px;
+                    }
+                    &>p
+                    {
+                    padding:0px 43px;
+                    }
+                    &>div
+                    {
+                        width: 352.4px;
+                        height: 98px;
+                        padding: 25.3px;
+                
+                        h2
+                        {
+                            margin: auto 0 auto 19px
+                        }
+                    }
+                    
+                    &>button
+                    {
+                        margin: 31.7px auto 36px;
+                        width: 353.7px;
+                        display: block;
+                        height: 50.5px;
+                        text-align: center;
+                        background-color: $Brightblue;
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: $Verypaleblue;
+                        border-radius: $borderradius - 5;
+                        border: none;
+                        box-shadow: 1px 10px 20px $shadowcolor,1px 15px 20px $shadowcolor;
+                    }
+                    &>a 
+                    {
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $Desaturatedblue;
+                    }
+                }
+               
+           
+               
+            
+        }
+}
+
+

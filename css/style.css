@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: Red Hat Display;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%; }
+
+.parent {
+  background-color: white;
+  border-radius: 20px; }
+  .parent .imghero {
+    height: 160.2;
+    width: 100%;
+    border-radius: 20px 20px 0 0; }
+  .parent > h1 {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 900; }
+  .parent > p {
+    color: #7280a7;
+    text-align: center;
+    margin-bottom: 26px; }
+  .parent > div {
+    border-radius: 20px;
+    background-color: #f5f7ff;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .parent > div img {
+      display: block;
+      width: 48px;
+      height: 100%; }
+    .parent > div h2 {
+      font-size: 16px;
+      font-weight: 900; }
+      .parent > div h2 span {
+        font-size: 14px;
+        font-weight: 500;
+        color: #7280a7; }
+    .parent > div a {
+      margin-left: auto;
+      align-self: center;
+      color: #3829e0;
+      font-weight: 700;
+      text-decoration: underline; }
+      .parent > div a:hover {
+        text-decoration: none;
+        color: #796ee8; }
+
+@media (min-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-size: cover; }
+    body .parent {
+      width: 327px;
+      height: 568px; }
+      body .parent .imghero {
+        height: 160.2;
+        width: 100%; }
+      body .parent > h1 {
+        height: 82.1px;
+        padding: 21.5px 0;
+        font-size: 25px; }
+      body .parent > p {
+        padding: 0px 25px; }
+      body .parent > div {
+        width: 287.7px;
+        height: 82.6px;
+        padding: 16px; }
+        body .parent > div h2 {
+          margin-left: 19px; }
+      body .parent > button {
+        margin: 23.5px auto 27.3px;
+        width: 278.5px;
+        display: block;
+        height: 50.5px;
+        text-align: center;
+        background-color: #3829e0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #f5f7ff;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 1px 10px 20px #dbd5f1, 1px 15px 20px #dbd5f1; }
+      body .parent > a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        color: #7280a7; } }
+@media (min-width: 1440px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain; }
+    body .parent {
+      width: 451px;
+      height: 699px; }
+      body .parent .imghero {
+        height: 199.5px;
+        width: 100%; }
+      body .parent > h1 {
+        height: 82.1px;
+        padding: 53px 0;
+        font-size: 25px; }
+      body .parent > p {
+        padding: 0px 43px; }
+      body .parent > div {
+        width: 352.4px;
+        height: 98px;
+        padding: 25.3px; }
+        body .parent > div h2 {
+          margin: auto 0 auto 19px; }
+      body .parent > button {
+        margin: 31.7px auto 36px;
+        width: 353.7px;
+        display: block;
+        height: 50.5px;
+        text-align: center;
+        background-color: #3829e0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #f5f7ff;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 1px 10px 20px #dbd5f1, 1px 15px 20px #dbd5f1; }
+      body .parent > a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-weight: 700;
+        color: #7280a7; } }
+
+/*# sourceMappingURL=style.css.map */
