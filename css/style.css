@@ -56,7 +56,11 @@ body {
       text-decoration: underline; }
       .parent > div a:hover {
         text-decoration: none;
-        color: #796ee8; }
+        color: #796ee8;
+        cursor: pointer; }
+  .parent > button:hover {
+    background-color: #796ee8;
+    cursor: pointer; }
 
 @media (min-width: 375px) {
   body {

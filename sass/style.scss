@@ -58,7 +58,6 @@ body
      border-radius: $borderradius;
       background-color: $Verypaleblue;
       margin: auto;
-     
       display: flex;
       justify-content:  flex-start;
       align-items: flex-start;
@@ -92,11 +91,20 @@ body
             {
                 text-decoration: none;
                 color: $activeanchor;
+                cursor: pointer;
             }
             
         }
   }
 
+  &>button 
+  {
+      &:hover
+      {
+          background-color: $activeanchor;
+          cursor: pointer;
+      }
+  }
 }
 @media (min-width:375px)
 {
